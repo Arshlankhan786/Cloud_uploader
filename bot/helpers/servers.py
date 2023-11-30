@@ -45,22 +45,22 @@ async def upload_handler(client: CloudBot, message: CallbackQuery, callback_data
             response = await server_upload(file=file_path, url=url)
             link = await gofile_io(response)
 
-        elif callback_data.startswith('filemoon'):
-            url = 'https://filemoonapi.com/api/upload'
+        elif callback_data.startswith('fileio'):
+            url = 'https://file.io/'
             response = await server_upload(file=file_path, url=url)
             link = await file_io(response)
 
-        elif callback_data.startswith('cloudkp'):
-            url = 'https://cdn01.cloudkp.com/upload'
+        elif callback_data.startswith('anonymfiles'):
+            url = 'https://api.anonfiles.com/upload'
             response = await server_upload(file=file_path, url=url)
             link = await anonfiles(response)
         await client.send_message(
             chat_id=message.message.chat.id,
             text=(f"File Name: `{file_name}`"
                   f"\nFile Size: `{file_ize}`"
-                  f'\nURL: {link}'),
+                  f'\nURL: `{link}`'),
             reply_to_message_id=message.message.reply_to_message.id
-        )
+    )
         await client.delete_messages(
             chat_id=message.message.chat.id,
             message_ids=message.message.id
