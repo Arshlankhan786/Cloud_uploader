@@ -58,7 +58,7 @@ async def upload_handler(client: CloudBot, message: CallbackQuery, callback_data
             chat_id=message.message.chat.id,
             text=(f"File Name: `{file_name}`"
                   f"\nFile Size: `{file_ize}`"
-                  f'\nURL: `{link}`'),
+                  f'\nURL: {link}'),
             reply_to_message_id=message.message.reply_to_message.id
     )
         await client.delete_messages(
