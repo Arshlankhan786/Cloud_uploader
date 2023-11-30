@@ -24,6 +24,12 @@ def server_select(file_size: int):
                 callback_data=f"gofileio"
             )
         ]
+        [
+            InlineKeyboardButton(
+                "gofile.io",
+                callback_data=f"gofileio"
+            )
+    ]
     ]
     if file_size < 1e+8:
         # 1e+8 is 100000000.0
