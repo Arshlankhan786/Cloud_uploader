@@ -12,24 +12,13 @@ from pyrogram.types import (
 
 def server_select(file_size: int):
     upload_selection = [
-        [
-            InlineKeyboardButton(
-                "cloudkp.com",
-                callback_data=f"cloudkp"
-            )
-        ],
+        
         [
             InlineKeyboardButton(
                 "gofile.io",
                 callback_data=f"gofileio"
             )
-        ],
-        [
-            InlineKeyboardButton(
-                "filemoon",
-                callback_data=f"filemoon"
-            )
-    ]
+        ]
     ]
     if file_size < 1e+8:
         # 1e+8 is 100000000.0
