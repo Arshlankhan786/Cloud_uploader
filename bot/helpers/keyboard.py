@@ -23,7 +23,7 @@ def server_select(file_size: int):
                 "gofile.io",
                 callback_data=f"gofileio"
             )
-        ]
+        ],
         [
             InlineKeyboardButton(
                 "filemoon",
