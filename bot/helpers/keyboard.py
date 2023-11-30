@@ -14,8 +14,8 @@ def server_select(file_size: int):
     upload_selection = [
         [
             InlineKeyboardButton(
-                "anonymfiles.com",
-                callback_data=f"anonymfiles"
+                "cloudkp.com",
+                callback_data=f"cloudkp"
             )
         ],
         [
@@ -26,8 +26,8 @@ def server_select(file_size: int):
         ]
         [
             InlineKeyboardButton(
-                "gofile.io",
-                callback_data=f"gofileio"
+                "filemoon",
+                callback_data=f"filemoon"
             )
     ]
     ]
