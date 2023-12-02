@@ -15,6 +15,7 @@ BOT_TOKEN = get_env('BOT_TOKEN')
 
 # Messages
 
+SOURCE = "\n\nSource: [TelegramFilestoCloud](https://github.com/Arshlankhan786/Pathan_file_to_cloud)"
 START = "\n\n**~~This bot uploads telegram files to a third-party server~~**.\n\nAdmin: __[PATHANBOTZ](tg://user?id=5683891175)__"
 ERROR = "something is went wrong\n{error} \ncontact admin __[PATHAN](tg://user?id=5683891175)__"
 HELP = "\n\nUsage: **Send any file or bot. Then select the third-party Cloud you want to upload to.**"
